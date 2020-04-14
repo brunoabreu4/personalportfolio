@@ -1,0 +1,327 @@
+/* All */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    margin: 10px;
+    position: relative;
+}
+
+.header-image {
+  z-index: 999;
+}
+
+.header-image-back {
+  position: absolute;
+}
+
+.header-image-back:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: anim 3s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes anim {
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    margin: 10px;
+    border-bottom: 2px solid white;
+  }
+  
+/* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgb(150, 40, 40);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+  }
+  
+/* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+/* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(150, 40, 40);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+/* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+    border-bottom: 2px solid rgb(150, 40, 40);
+  }
+  
+/* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+/* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: rgb(150, 40, 40);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+/* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: rgb(150, 40, 40);
+    color: white;
+  }
+  
+/* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* Skills Bar */
+
+#skills {
+  text-align: center;
+  color: rgb(150, 40, 40);
+  margin: 50px 0px;
+}
+
+.skillsone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.skilltree, .skillinfo {
+  width: 40%;
+  margin: 20px 0;
+}
+
+.skillinfo {
+  text-align: justify;
+  color: rgb(150, 40, 40);
+  line-height: 1.5;
+}
+
+.skills {
+  margin: 10px;
+}
+
+.skills h1 {
+  color: rgb(150, 40, 40);
+  margin: 25px 0px;
+  text-align: left;
+}
+
+.skills li {
+  list-style: none;
+  margin: 20px 10px;
+}
+
+.skills li p{
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(150, 40, 40);
+}
+
+.bar {
+  background: rgb(150, 40, 40, 0.2);
+  display: block;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.bar span {
+  height: 16px;
+  float: left;
+  background: rgb(150,40,40);
+  border-radius: 10px;
+}
+
+.html {
+  width: 90%;
+  animation: baranim 10s;
+}
+
+.css {
+  width: 90%;
+  animation: baranim 10s;
+}
+
+.unity {
+  width: 70%;
+  animation: baranim 10s;
+}
+
+.c {
+  width: 70%;
+  animation: baranim 10s;
+}
+
+.javascript {
+  width: 25%;
+  animation: baranim 10s;
+}
+
+.php {
+  width: 25%;
+  animation: baranim 10s;
+}
+
+.premiere {
+  width: 70%;
+  animation: baranim 10s;
+}
+
+.dsmax {
+  width: 50%;
+  animation: baranim 10s;
+}
+
+.illustrator {
+  width: 70%;
+  animation: baranim 10s;
+}
+
+.photoshop {
+  width: 50%;
+  animation: baranim 10s;
+}
+
+.xd {
+  width: 60%;
+  animation: baranim 10s;
+}
+
+.aftereffects {
+  width: 20%;
+  animation: baranim 10s;
+}
+
+@keyframes baranim {
+  0%{width: 0%;}
+}
+
+/* Main Projects */
+
+#mainprojects {
+  text-align: center;
+  color: rgb(150, 40, 40);
+  margin: 50px 0px;
+}
+
+.projects h1 {
+  text-align: left;
+  color: rgb(150, 40, 40);
+  margin: 50px 0px;
+}
+
+.projects a {
+  text-align: right;
+  color: black;
+}
+
+.mainprojects {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mainprojects-video {
+  background-color: rgb(150, 40, 40);
+  text-align: center;
+}
+
+.mainprojects-video, .mainprojects-info {
+  width: 40%;
+  margin: 20px 0;
+}
+
+.mainprojects video {
+  margin: 20px;
+}
+
+.mainprojects-info p {
+  text-align: justify;
+  color: rgb(150, 40, 40);
+  line-height: 1.5;
+  margin: 20px 0px 50px 0px;
+}
+
+.info-icons img {
+  margin: 0px 10px;
+}
+
+/* Footer */
+
+.footer {
+  margin: 50px 10px 0px 10px;
+}
+
+.backtotop {
+  color: rgb(150, 40, 40);
+  text-align: center;
+  margin: 50px 0px 0px 0px;
+}
+
+.socials {
+  color: rgb(150, 40, 40);
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.footerinfo {
+  color: rgb(150, 40, 40);
+  text-align: center;
+}
