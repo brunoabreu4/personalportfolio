@@ -266,7 +266,7 @@ body {
 
 .projects a {
   text-align: right;
-  color: black;
+  color: rgb(150, 40, 40);
 }
 
 .mainprojects {
@@ -310,15 +310,22 @@ body {
 }
 
 .backtotop {
-  color: rgb(150, 40, 40);
   text-align: center;
   margin: 50px 0px 0px 0px;
+}
+
+.backtotop a {
+  color: rgb(150, 40, 40);
 }
 
 .socials {
   color: rgb(150, 40, 40);
   text-align: center;
   margin: 20px 0px;
+}
+
+.socials img {
+  margin: 0px 10px;
 }
 
 .footerinfo {
