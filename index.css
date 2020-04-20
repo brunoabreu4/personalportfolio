@@ -3,6 +3,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    cursor: pointer;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
   position: absolute;
 }
 
-.header-image-back:hover {
+teste.header-image-back:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: anim 3s;
 
@@ -136,7 +137,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  margin: 20px 0;
+  margin: 5% 10px;
 }
 
 .skilltree, .skillinfo {
@@ -261,16 +262,11 @@ body {
 .projects h1 {
   text-align: left;
   color: rgb(150, 40, 40);
-  margin: 50px 0px;
-}
-
-.projects a {
-  text-align: right;
-  color: rgb(150, 40, 40);
+  margin: 0px 0px 50px 0px;
 }
 
 .mainprojects {
-  margin: 10px;
+  margin: 10% 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -301,6 +297,22 @@ body {
 
 .info-icons img {
   margin: 0px 10px;
+}
+
+.tags {
+	background-color:rgb(150, 40, 40);
+	border-radius:42px;
+	border:1px solid rgb(120, 30, 30);
+	cursor: pointer;
+	color:#ffffff;
+	padding:5px 10px;
+  text-decoration:none;
+  margin: 10px 2px;
+}
+
+.tags:hover {
+  background-color:#ffffff;
+  color:rgb(150, 40, 40);
 }
 
 /* Footer */
