@@ -156,6 +156,12 @@ body {
   margin: 20px 0;
 }
 
+@media screen and (max-width: 1000px) {
+  .skilltree, .skillinfo {
+    width: 100%;
+  }
+}
+
 .skillinfo {
   text-align: justify;
   color: rgb(150, 40, 40);
