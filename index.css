@@ -137,8 +137,6 @@ body {
 /* Skills Bar */
 
 #skills {
-  text-align: center;
-  color: rgb(150, 40, 40);
   margin: 50px 0px;
 }
 
@@ -271,8 +269,6 @@ body {
 /* Main Projects */
 
 #mainprojects {
-  text-align: center;
-  color: rgb(150, 40, 40);
   margin: 50px 0px;
 }
 
