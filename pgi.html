@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="pgi.css">
+    <script type="text/javascript" src="index.js"></script>
+    <title>reGen</title>
+    <meta charset="UTF-8">
+    <meta name="BrunoAbreuDoesGames" content="Bruno Abreu Portfolio">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="Bruno Abreu" content="Bruno Abreu Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#962828">
+    <meta name="msapplication-TileColor" content="#962828">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#962828">
+</head>
+<body>
+  <div id="wrapper">
+    <div class="navbar" id="navbarid">
+        <a href="index.html">main Skills & main projects</a>
+        <div class="dropdown">
+          <button class="dropbtn">other projects
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="regen.html">reGen</a>
+            <a href="pgi.html">Project GreenWorld International</a>
+            <a href="#">Procurado</a>
+          </div>
+        </div>
+        <a href="#news">about me</a>
+        <a href="#news">contact me</a>
+    </div>
+    <div class="header">
+        <img src="images/logopgi.jpg" alt="regen logo" width="75%" height="75%">
+    <div>
+        <button class="tags">Rebranding</button>
+        <button class="tags">Art/Illustration</button>
+        <button class="tags">Web Design</button>
+        <button class="tags">HTML & CSS</button>
+    </div>
+    </div>
+    <div class="mainprojects">
+        <div class="mainprojects-info">
+          <h1>Project GreenWorld International - Rebranding</h1>
+          <p>reGen is brand created by me for academic purposes only. This is a company of technological solutions related to medicine. It in charge of its manufacture, distribution and implementation. As part of the objectives of this academic project i also created a campaign through two posters.</p>
+        </div>
+        <div class="mainprojects-video">
+          <img class="logoSlides" src="images/pgioldlogo.png" width="40%" height="40%">
+        </div>
+    </div>
+    <div class="slideshow-wrapper">
+    <h1 class="slideshow-header">Website Rebranding</h1>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 2</div>
+        <img src="images/pgihome.jpg" style="width:100%">
+        <div class="text">Page 1 - Home</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 2</div>
+        <img src="images/pgiawards.jpg" style="width:100%">
+        <div class="text">Page 2 - Awards</div>
+      </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+
+    <div class="footer">
+        <div class="backtotop">
+          <a href="#wrapper"><b>Back to Top</b></a>
+        </div>
+        <div class="navbar" id="navbarid">
+            <a href="index.html">Main Skills & Main Projects</a>
+          <a href="regen.html">"reGen"</a>
+          <a href="#">"Procurado"</a>
+          <a href="#news">about me</a>
+          <a href="#news">contact me</a>
+        </div>
+        <div class="socials">
+          <a href="https://www.behance.net/brunoabreu1/" target="_blank"><img src="images/icons/behance.svg" alt="my profile photo" width="3%" height="3%"></a>
+          <a href="https://www.linkedin.com/in/brunoferreiraabreu/" target="_blank"><img src="images/icons/linkedin.svg" alt="my profile photo" width="3%" height="3%"></a>
+        </div>
+        <div class="footerinfo">
+          <p>website designed and developed by Abreu Game Designer & Developer</p>
+        </div>
+      </div>
+  </div>
+</body>
+</html>
