@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="regen.css">
     <script type="text/javascript" src="index.js"></script>
     <title>reGen</title>
@@ -59,9 +60,67 @@
         </div>
         <div class="mainprojects-info">
             <h1>the symbol</h1>
-            <p>reGen is brand created by me for academic purposes only. This is a company of technological solutions related to medicine. It in charge of its manufacture, distribution and implementation. As part of the objectives of this academic project i also created a campaign through two posters.</p>
+            <p>This brand symbol was designed based on the forms of representation of the Vitruvian Man from  Leonardo Da Vinci 1490 drawing. The final presentation was, however, rethought and modified to have better graphic presentation. In the end was complemented with the lettering "reGen", the name of the brand, to finish the entire logo.</p>
         </div>
     </div>
+    <div class="slideshow-wrapper">
+    <h1 class="slideshow-header">advertising campaign</h1>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 2</div>
+        <img src="images/regenimg1.png" style="width:100%">
+        <div class="text">Poster 1</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 2</div>
+        <img src="images/regenimg2.png" style="width:100%">
+        <div class="text">Poster 2</div>
+      </div>
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+
     <div class="footer">
         <div class="backtotop">
           <a href="#wrapper"><b>Back to Top</b></a>

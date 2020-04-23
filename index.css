@@ -59,10 +59,10 @@ body {
     overflow: hidden;
     margin: 10px;
     border-bottom: 2px solid white;
-  }
+}
   
 /* Links inside the navbar */
-  .navbar a {
+.navbar a {
     float: left;
     font-size: 18px;
     color: rgb(150, 40, 40);
@@ -70,23 +70,23 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     border-bottom: 2px solid white;
-  }
+}
 
-  @media screen and (max-width: 600px) {
-    .navbar a {
+@media screen and (max-width: 600px) {
+  .navbar a {
       float: none;
       width: 100%;
-    }
   }
+}
   
 /* The dropdown container */
-  .dropdown {
+.dropdown {
     float: left;
     overflow: hidden;
-  }
+}
   
 /* Dropdown button */
-  .dropdown .dropbtn {
+.dropdown .dropbtn {
     font-size: 18px;
     border: none;
     outline: none;
@@ -95,44 +95,44 @@ body {
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
-  }
+}
   
 /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn {
     background-color: white;
     border-bottom: 2px solid rgb(150, 40, 40);
-  }
+}
   
 /* Dropdown content (hidden by default) */
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
   
 /* Links inside the dropdown */
-  .dropdown-content a {
+.dropdown-content a {
     float: none;
     color: rgb(150, 40, 40);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
+}
   
 /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: rgb(150, 40, 40);
     color: white;
-  }
+}
   
 /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
-  }
+}
 
 /* Skills Bar */
 
