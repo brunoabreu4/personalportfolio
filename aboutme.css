@@ -90,8 +90,17 @@
   position: relative;
   border-radius: 6px;
   color: white;
-
+  
 }
+
+.content p {
+  line-height: 1.5;
+}
+
+.content h2 {
+  line-height: 3;
+}
+
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
