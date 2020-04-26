@@ -1,8 +1,60 @@
+/* Header */
+
+.myinfo {
+  margin: 10% 10px 0 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.myinfo-downloads, .myinfo-info, .myinfo-foto {
+  width: 33%;
+}
+
+@media screen and (max-width: 1000px) {
+  .myinfo-downloads, .myinfo-info, .myinfo-foto {
+    width: 100%;
+  }
+  .myinfo-info p {
+    text-align: center;
+  }
+}
+
+.myinfo-downloads {
+  text-align: left;
+  text-decoration: none;
+}
+
+.myinfo-downloads a {
+  text-decoration: none;
+  color: rgb(150,40,40);
+  font-weight: bold;
+}
+
+.myinfo-downloads img {
+  margin: 0 10px;
+}
+
+.myinfo-info {
+  text-align: right;
+  color: rgb(150,40,40);
+}
+
+.myinfo-info p {
+  margin: 10px 10px;
+  font-weight: bold;
+}
+
+.myinfo-foto {
+  text-align: center;
+}
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 10% auto;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -90,7 +142,10 @@
   position: relative;
   border-radius: 6px;
   color: white;
-  
+}
+
+.content a {
+  margin: 10px 0;
 }
 
 .content p {
