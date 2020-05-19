@@ -240,6 +240,37 @@ body {
   0%{width: 0%;}
 }
 
+/* Showreel */
+/*
+.show {
+  margin: 10% 7%;
+}
+
+.show h1 {
+  text-align: center;
+  color: rgb(150, 40, 40);
+}
+
+.showreel {
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.showreel-video {
+  background-color: rgb(150, 40, 40);
+  text-align: center;
+  width: 100%;
+}
+
+.showreel iframe {
+  margin: 20px;
+}
+*/
+
 /* Main Projects */
 
 #mainprojects {
