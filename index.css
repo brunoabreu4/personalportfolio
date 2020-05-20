@@ -212,7 +212,12 @@ body {
 }
 
 .dsmax {
-  width: 50%;
+  width: 40%;
+  animation: baranim 10s;
+}
+
+.blender {
+  width: 25%;
   animation: baranim 10s;
 }
 
