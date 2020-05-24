@@ -177,22 +177,17 @@ body {
 }
 
 .html {
-  width: 90%;
+  width: 95%;
   animation: baranim 10s;
 }
 
 .css {
-  width: 90%;
-  animation: baranim 10s;
-}
-
-.unity {
-  width: 70%;
+  width: 95%;
   animation: baranim 10s;
 }
 
 .c {
-  width: 70%;
+  width: 50%;
   animation: baranim 10s;
 }
 
@@ -202,11 +197,16 @@ body {
 }
 
 .php {
-  width: 25%;
+  width: 20%;
   animation: baranim 10s;
 }
 
 .premiere {
+  width: 70%;
+  animation: baranim 10s;
+}
+
+.unity {
   width: 70%;
   animation: baranim 10s;
 }
@@ -217,7 +217,7 @@ body {
 }
 
 .blender {
-  width: 40%;
+  width: 45%;
   animation: baranim 10s;
 }
 
@@ -232,12 +232,12 @@ body {
 }
 
 .xd {
-  width: 60%;
+  width: 70%;
   animation: baranim 10s;
 }
 
 .aftereffects {
-  width: 20%;
+  width: 25%;
   animation: baranim 10s;
 }
 
