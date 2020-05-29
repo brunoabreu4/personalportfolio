@@ -8,6 +8,9 @@
 body {
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: white;
+    -ms-background-color: white;
+    -moz-background-color: white;
+    -webkit-background-color: white;
 }
 
 /* Header */
