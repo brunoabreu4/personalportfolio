@@ -249,18 +249,9 @@ body {
 }
 
 /* Showreel */
-/*
+
 .show {
-  margin: 10% 7%;
-}
-
-.show h1 {
-  text-align: center;
-  color: rgb(150, 40, 40);
-}
-
-.showreel {
-  margin: 30px 0px;
+  margin: 0 10px 10% 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -268,16 +259,29 @@ body {
   align-items: center;
 }
 
-.showreel-video {
+#show {
+  margin-top: 10%;
+  text-align: center;
+  color: rgb(150, 40, 40);
+  float: none;
+}
+
+.showreel {
+  margin: 30px 0px;
   background-color: rgb(150, 40, 40);
   text-align: center;
-  width: 100%;
+  width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .showreel {
+    width: 100%;
+  }
 }
 
 .showreel iframe {
-  margin: 20px;
+  margin: 30px;
 }
-*/
 
 /* Main Projects */
 
