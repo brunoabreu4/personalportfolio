@@ -33,6 +33,46 @@
     <div class="projects">
       <div class="mainprojects">
         <div class="mainprojects-video">
+          <img id="myImg4" src="images/train.png" width="90%">
+            <div id="myModal4" class="modal">
+              <!-- The Close Button -->
+              <span class="close4">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img04">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption4"></div>
+            </div>
+            <script>
+            // Get the modal
+            var modal = document.getElementById("myModal4");
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg4");
+            var modalImg = document.getElementById("img04");
+            var captionText = document.getElementById("caption4");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close4")[0];
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            </script>
+          </div>
+          <div class="mainprojects-info">
+            <h1>Waltz_Files #2000<br>Train</h1>
+            <div class="info-icons">
+              <img src="images/icons/blender.svg" alt="my profile photo" width="40px" height="40px">
+            </div>
+            <p>This train and railway were entirely made in Blender. They were modeled and later imported to a game (Unity3D Project). This project was my first ever one week Game Jam!</p>
+            <button class="tags">3D Modeling</button>
+          </div>
+        </div>
+      <div class="mainprojects">
+        <div class="mainprojects-video">
           <img id="myImg3" src="images/well.png" width="90%">
             <div id="myModal3" class="modal">
               <!-- The Close Button -->
