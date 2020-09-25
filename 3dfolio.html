@@ -33,6 +33,46 @@
     <div class="projects">
       <div class="mainprojects">
         <div class="mainprojects-video">
+          <img id="myImg5" src="images/shack.png" width="90%">
+            <div id="myModal5" class="modal">
+              <!-- The Close Button -->
+              <span class="close5">&times;</span>
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="img05">
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption4"></div>
+            </div>
+            <script>
+            // Get the modal
+            var modal = document.getElementById("myModal5");
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById("myImg5");
+            var modalImg = document.getElementById("img05");
+            var captionText = document.getElementById("caption5");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close5")[0];
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            </script>
+          </div>
+          <div class="mainprojects-info">
+            <h1>Gabbit_Files #1003<br>Sunset Shack</h1>
+            <div class="info-icons">
+              <img src="images/icons/blender.svg" alt="my profile photo" width="40px" height="40px">
+            </div>
+            <p>As i continue to follow Grant Abbitt's tutorials, this was the result of Level 4. With my own twist! One cute shack at sunset. Awesome!</p>
+            <button class="tags">3D Modeling</button>
+          </div>
+        </div>
+      <div class="mainprojects">
+        <div class="mainprojects-video">
           <img id="myImg4" src="images/train.png" width="90%">
             <div id="myModal4" class="modal">
               <!-- The Close Button -->
