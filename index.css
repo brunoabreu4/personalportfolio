@@ -19,12 +19,9 @@ body {
     position: relative;
 }
 
-.header-image-back {
-  position: absolute;
-}
-
 .header-image {
   z-index: 999;
+  text-align: center;
 }
 
 /* Navbar container */
@@ -41,7 +38,7 @@ body {
 /* Links inside the navbar */
 .navbar a {
     float: left;
-    font-size: 18px;
+    font-size: 15px;
     color: rgb(150, 40, 40);
     text-align: center;
     padding: 14px 16px;
@@ -296,7 +293,7 @@ body {
 }
 
 .mainprojects {
-  margin: 0 10px;
+  margin: 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -305,7 +302,7 @@ body {
 }
 
 .mainprojects-video {
-  background-color: rgb(150, 40, 40);
+  background-color: white;
   text-align: center;
 }
 
@@ -333,6 +330,10 @@ body {
   color: rgb(150, 40, 40);
   line-height: 1.5;
   margin: 20px 0px 20px 0px;
+}
+
+.mainprojects-info h1 {
+  font-size: 18px;
 }
 
 .info-icons img {
@@ -448,6 +449,8 @@ body {
 
 .footer {
   margin: 50px 10px 0px 10px;
+  position: absolute;
+  width: 100%;
 }
 
 .backtotop {
@@ -457,6 +460,7 @@ body {
 
 .backtotop a {
   color: rgb(150, 40, 40);
+  font-size: 15px;
 }
 
 .socials {
@@ -470,6 +474,7 @@ body {
 }
 
 .footerinfo {
+  font-size: 15px;
   color: rgb(150, 40, 40);
   text-align: center;
 }
